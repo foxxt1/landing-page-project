@@ -143,6 +143,14 @@ body {
     font-weight: 900;
     font-size: 24px;
     text-shadow: 0.5px 0 black;
+    text-decoration:  2px underline var(--onaccent);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
+    border-radius: 2px;
+}
+
+.secondheading::after {
+    border-radius: 3px;
 }
 
 .boxes {
@@ -159,11 +167,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10px;;
+    gap: 1.5vw;;
 }
 
 .box {
-    outline: 2.5px solid var(--onaccent);
+    outline: 5px solid var(--onaccent);
     width: 10vw;
     height: 10vw;
     border-radius: 10px;
@@ -173,7 +181,8 @@ body {
 }
 
 .subtext {
-    color: var(--onaccentsofter);
+    /* color: var(--onaccentsofter); */
+    color: black;
 }
 
 .thirdcontent {
@@ -222,7 +231,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2.5vw;
-    width: 80vw;
+    width: 60vw;
 }
 
 .ctaone {
@@ -285,4 +294,16 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.clickMe {
+    -moz-appearance: button;
+    -ms-appearance: button;
+    -o-appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #000;
+    padding: 0.2em 0.4em;
 }
