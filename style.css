@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
-    --dark-bg: #1F2937;
+    /* --dark-bg: #1F2937;
     --light-main-text: #F9FAF8;
     --light-secondary-text: #E5E7EB;
     --button-cta-color: #3882F6;
     --dark-main-text: #1F2937;
     --dark-secondary-text: #65676B;
-    --quote-bg: #E5E7EB;
+    --quote-bg: #E5E7EB; */
+
+    --dark-bg: #111418;
+    --light-main-text: #E8ECF2;
+    --light-secondary-text: #A7B0BF;
+    --button-cta-color: #4EC5E8;
+    --dark-main-text: #DCE3EA;
+    --dark-secondary-text: #7F8A99;
+    --quote-bg: #1A1E23;
+
+    --onaccent: #df4641;
+    --onaccentopp: #32a541;
+}
+
+html {
+    min-height: 100vh;
 }
 
 body {
@@ -28,29 +43,36 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--dark-bg);
+    background-color: var(--onaccent);
     padding: 1vw;
     padding-left: 10vw;
     padding-right: 10vw;
-    color: var(--light-main-text);
+    color: white;
     font-size: 24px;
 }
 
-.headerlinks {
+.headerlinks, a {
     display: flex;
     gap: 15px;
     list-style: none;    display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--light-secondary-text);
+    color: white;
+    text-decoration: none;
+}
+
+.headerimg {
+    height: 40px;
+    width: 20.36px;
 }
 
 .firstcontent {
-    background-color: var(--dark-bg);
+    /* background-color: var(--dark-bg); */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5vw;
+    padding: 10vw;
+    background-image: url('https://img.abcdinamo.com/eyJidWNrZXQiOiJwcm9kdWN0aW9uLWFiY2RpbmFtbyIsImtleSI6Im1lZGlhXC9DdXN0b21cL09uXC9EaW5hbW9fVHlwZWZhY2VfQ3VzdG9tX0RpYXR5cGVfT05fUnVubmluZ19Nb29kX09uQ2FtcGFpZ25fMjAyM18zMjAwcHgtMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY29udGFpbiIsIndpZHRoIjoxNjAwfSwidG9Gb3JtYXQiOiJqcGciLCJqcGVnIjp7InF1YWxpdHkiOjkwfSwicm90YXRlIjowfSwidmVyc2lvbiI6MTY5NzExMjczNn0=');
 }
 
 .firstleft {
@@ -58,6 +80,10 @@ body {
     flex-direction: column;
     width: 40vw;
     padding-left: 10vw;
+    gap: 15px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 35px;
 }
 
 .firstright {
@@ -70,12 +96,18 @@ body {
 
 .firstrightimg {
     padding: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    outline: 5px solid var(--onaccent);
+    outline-offset: -10px;
 }
 
 .topbutton {
     all: unset;
     width: 5vw;
-    background-color: var(--button-cta-color);
+    /* background-color: var(--button-cta-color); */
+    background-color: var(--onaccent);
     color: var(--light-main-text);
     display: flex;
     justify-content: center;
@@ -107,7 +139,7 @@ body {
 }
 
 .secondheading {
-    padding: 20px;
+    padding: 2.25em;
     font-weight: 900;
     font-size: 24px;
     text-shadow: 0.5px 0 black;
@@ -131,7 +163,7 @@ body {
 }
 
 .box {
-    outline: 2.5px solid var(--button-cta-color);
+    outline: 2.5px solid var(--onaccent);
     width: 10vw;
     height: 10vw;
     border-radius: 10px;
@@ -141,11 +173,11 @@ body {
 }
 
 .subtext {
-    color: var(--dark-secondary-text);
+    color: var(--onaccentsofter);
 }
 
 .thirdcontent {
-    background-color: var(--quote-bg);
+    background-color: var(--onaccent);
     padding: 5vw;
     display: flex;
     justify-content: center;
@@ -171,10 +203,11 @@ body {
     font-size: 24px;
     font-weight: 900;
     text-shadow: 0.5px;
+    color: white;
 }
 
 .fourthcontent {
-    background-color: var(--light-main-text);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +215,7 @@ body {
 }
 
 .calltoaction {
-    background-color: var(--button-cta-color);
+    background-color: var(--onaccent);
     padding: 2.5vw;
     border-radius: 10px;
     display: flex;
@@ -199,25 +232,28 @@ body {
 }
 
 .ctamaintext, .ctasubtext {
-    color: var(--light-main-text);
+    color: white;
 }
 
 .ctamaintext {
     font-weight: 900;
+    font-size: 24px;
 }
 
 .ctatwo {
-    outline: 2px solid var(--light-secondary-text);
+    outline: 2px solid white;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-bg);
+    background-color: var(--onaccent);
     color: var(--light-main-text);
     min-height: 100px;
-    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    font-size: 18px;
 }
 
 .wapper {
@@ -225,4 +261,28 @@ body {
     flex-direction: column;
     min-height: 100vh;
     flex: 1;
+}
+
+.one {
+    background-image: url("https://img.abcdinamo.com/eyJidWNrZXQiOiJwcm9kdWN0aW9uLWFiY2RpbmFtbyIsImtleSI6Im1lZGlhXC9DdXN0b21cL09uXC9EaW5hbW9fVHlwZWZhY2VzX09uX0N1c3RvbV9Gb250X1J1bm5pbmdfT2ZmX01hZ2F6aW5lX0RpYXR5cGVfNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY29udGFpbiIsIndpZHRoIjo0ODB9LCJ0b0Zvcm1hdCI6ImpwZyIsImpwZWciOnsicXVhbGl0eSI6OTB9LCJyb3RhdGUiOjB9LCJ2ZXJzaW9uIjoxNjk3MTkzNDg3fQ==");
+    background-position: 60% 25%;
+}
+
+.two {
+    background-image: url("https://img.abcdinamo.com/eyJidWNrZXQiOiJwcm9kdWN0aW9uLWFiY2RpbmFtbyIsImtleSI6Im1lZGlhXC9DdXN0b21cL09uXC9EaW5hbW9fVHlwZWZhY2VzX09uX0N1c3RvbV9Gb250X1J1bm5pbmdfT2ZmX01hZ2F6aW5lX0RpYXR5cGVfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY29udGFpbiIsIndpZHRoIjo0ODB9LCJ0b0Zvcm1hdCI6ImpwZyIsImpwZWciOnsicXVhbGl0eSI6OTB9LCJyb3RhdGUiOjB9LCJ2ZXJzaW9uIjoxNjk3MTkzNDg1fQ==");
+    background-position: 60% 20%;
+}
+
+.three {
+    background-image: url("https://img.abcdinamo.com/eyJidWNrZXQiOiJwcm9kdWN0aW9uLWFiY2RpbmFtbyIsImtleSI6Im1lZGlhXC9DdXN0b21cL09uXC9EaW5hbW9fVHlwZWZhY2VfQ3VzdG9tX0RpYXR5cGVfT05fUnVubmluZ19PT0hfTHVrZUxvbmRvbl8yMDIzXzMyMDBweC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY29udGFpbiIsIndpZHRoIjoxMDI0fSwidG9Gb3JtYXQiOiJqcGciLCJqcGVnIjp7InF1YWxpdHkiOjkwfSwicm90YXRlIjowfSwidmVyc2lvbiI6MTY5NzExOTM5N30=");
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+.four {
+    background-image: url("https://img.abcdinamo.com/eyJidWNrZXQiOiJwcm9kdWN0aW9uLWFiY2RpbmFtbyIsImtleSI6Im1lZGlhXC9DdXN0b21cL09uXC9EaW5hbW9fVHlwZWZhY2VfQ3VzdG9tX0RpYXR5cGVfT05fUnVubmluZ19Nb29kQ2xvdWRzX09uQ2FtcGFpZ25fMjAyM18zMjAwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb250YWluIiwid2lkdGgiOjY0MH0sInRvRm9ybWF0IjoianBnIiwianBlZyI6eyJxdWFsaXR5Ijo5MH0sInJvdGF0ZSI6MH0sInZlcnNpb24iOjE2OTcxMDg3MjZ9");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
