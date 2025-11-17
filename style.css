@@ -4,6 +4,9 @@
     --dark-bg: #1F2937;
     --light-main-text: #F9FAF8;
     --light-secondary-text: #E5E7EB;
+    --button-cta-color: #3882F6;
+    --dark-main-text: #1F2937;
+    --dark-secondary-text: #65676B;
 }
 
 body {
@@ -21,8 +24,8 @@ body {
     justify-content: space-between;
     background-color: var(--dark-bg);
     padding: 5px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     color: var(--light-main-text);
     font-size: 24px;
 }
@@ -32,4 +35,91 @@ body {
     gap:15px;
     list-style: none;
     color: var(--light-secondary-text);
+}
+
+.firstcontent {
+    background-color: var(--dark-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstleft {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding-left: 10vw;
+}
+
+.firstright {
+    width: 40vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbutton {
+    width: 5vw;
+    background-color: var(--button-cta-color);
+    color: var(--light-main-text);
+}
+
+.hero {
+    color: var(--light-main-text);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.herosub {
+    font-size: 18px;
+    color: var(--light-secondary-text);
+}
+
+.secondcontent {
+    background-color: var(--light-main-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 10vh;
+}
+
+.secondheading {
+    padding: 20px;
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow: 0.5px 0 black;
+}
+
+.boxes {
+    display: flex;
+    font-size: 18px;
+    color: var(--dark-main-text);
+    gap: calc(10vw/3);
+    justify-content: space-evenly;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    outline: 2.5px solid var(--button-cta-color);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtext {
+    color: var(--dark-secondary-text);
 }
